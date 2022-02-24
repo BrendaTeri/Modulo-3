@@ -1,5 +1,11 @@
 <!-- La informacion viaja desde el componente al template(html) -->
+<!-- A la información que manda EventEmitter, debemos recibirla y trasmitirla en el template del header -->
 <header>
     <h1>{{title}}</h1>
-    <app-button color="green" text="Add Task"></app-button>
+    <app-button 
+        color="green" 
+        text="Add Task"
+        (btnClick)="toggleAddTask()"
+    >
+</app-button>
 </header>

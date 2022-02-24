@@ -13,5 +13,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+//Cuando el usuario haga click en btn(en el component-btn), este le pasa al component-header que hubo un evento y lo muestra.
+  toggleAddTask(){
+    console.log("toggleAddTask!");
+  }
 
 }

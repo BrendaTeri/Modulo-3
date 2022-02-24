@@ -2,11 +2,12 @@
 <!-- Con [ngStyle] recibe el color que viene desde el component, y se está montando dentro del background -->
 <!-- Información que viaja en un sólo sentido- del template -> component del template del component -->
 <!-- header-component al controlador del button-component al template del component -->
+<!-- Binding (click), queremos que se llame a la fn onClick() -->
 
 <button 
     class="btn" 
     [ngStyle]="{'background-color': color}"
-    
+    (click)="onClick()"
 >
 {{text}}
 

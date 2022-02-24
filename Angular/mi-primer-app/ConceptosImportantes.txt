@@ -1,0 +1,5 @@
+Propery Binding:
+ Use el Propery Binding(enlace de propiedad) para hacer cosas como:
+    * alternar la funcionalidad del botón,
+    * establecer rutas mediante programación
+    * y compartir valores entre componentes.
