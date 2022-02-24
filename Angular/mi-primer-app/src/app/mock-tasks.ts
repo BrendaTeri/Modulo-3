@@ -1,6 +1,6 @@
 //Para guardar la información de lo que estamos creando en las task-Emula una DB
 import {Task} from  "./Task"
-export const TASK: Task[] = [
+export const TASKS: Task[] = [
     {
         id: 1,
         text: 'Terminar módulo de Angular',

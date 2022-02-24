@@ -1,0 +1,7 @@
+<!-- Vamos a ir montando items cuantas tareas tengamos -->
+<!-- Vamos a pasarle la tarea que recibimos en el ngFor -->
+<app-tasks-item 
+    *ngFor="let task of tasks"
+    [task] = "task"
+>
+</app-tasks-item>
