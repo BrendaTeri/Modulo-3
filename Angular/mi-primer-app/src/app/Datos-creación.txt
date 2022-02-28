@@ -23,5 +23,7 @@ Creamos un servicio para poder manejar las tareas, ya no lo maneja el componente
     Vamos a iniciar el service, y el db.json va a ser el archivo donde estaremos guardando los datos de DB.
  --5000 : va a seguir la ejecución desde el puerto 5000.
 
-Para correr el servicio:
+*Para correr el servicio:
 'npm run server'
+
+*El service se encarga de hablar con  la DB, la lógica la manejamos en el component.

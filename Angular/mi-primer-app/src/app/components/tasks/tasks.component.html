@@ -1,7 +1,12 @@
-<!-- Vamos a ir montando items cuantas tareas tengamos -->
-<!-- Vamos a pasarle la tarea que recibimos en el ngFor -->
+<app-add-task></app-add-task>
 <app-tasks-item 
-    *ngFor="let task of tasks"
-    [task] = "task"
+*ngFor="let task of tasks"
+[task] = "task"
+(onDeleteTask)="deleteTask(task)"
+(onToggleReminder)="toggleReminder(task)"
 >
 </app-tasks-item>
+<!-- Vamos a ir montando items cuantas tareas tengamos -->
+<!-- Vamos a pasarle la tarea que recibimos en el ngFor -->
+<!-- onDeleteTask->Para eliminar la tarea -->
+<!-- onToggleReminder->Para cambiar si tiene recordatorio o no -->
