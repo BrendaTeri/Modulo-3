@@ -23,6 +23,12 @@
             "text": "Practicar Código",
             "day": "Siempre",
             "reminder":false
+        },
+        { 
+            "id": 5,
+            "text": "Actividad Física",
+            "day": "28 de Febrero a las 10:00",
+            "reminder":true
         }
     ]
 }
