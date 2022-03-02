@@ -39,4 +39,13 @@ export class TasksComponent implements OnInit {
     task.reminder = !task.reminder
     this.taskService.updateToggleReminder(task).subscribe();
   }
+
+//Recibimos la tarea agregada desde addTask.
+//Ahora guardamos esta información enviandola al DB
+  addTask(task:Task){
+    this.taskService.addTask(task).subscribe(task=>{
+      this.tasks.push(task)
+    })
+  }
 }
+
