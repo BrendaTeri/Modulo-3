@@ -22,7 +22,7 @@
       "id": 4,
       "text": "Practicar Código",
       "day": "Siempre",
-      "reminder": false
+      "reminder": true
     }
   ]
 }

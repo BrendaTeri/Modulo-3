@@ -9,13 +9,16 @@ import { Task } from 'src/app/Task';
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
+
 export class TasksComponent implements OnInit {
-//iniciamos la lista de tareas con una lista vacía.
+//Iniciamos la lista de tareas con una lista vacía.
   tasks: Task[] = [];
+
 //Debemos iniciar nuestro servicio.
   constructor(
     private taskService: TaskService
   ) { }
+
 //Cuando se monte el componente, vamos a llamar a nuestro servicio. 
 //Guardamos la lista de tareas dentro de la lista vacía que creamos anteriormente.
   ngOnInit(): void {
@@ -26,6 +29,7 @@ export class TasksComponent implements OnInit {
       this.tasks = tasks
     });
   }
+
 //Debemos pasar la task a la DB para que sea borrada a travez del servicio.
   deleteTask(task: Task){
     this.taskService.deleteTask(task)
