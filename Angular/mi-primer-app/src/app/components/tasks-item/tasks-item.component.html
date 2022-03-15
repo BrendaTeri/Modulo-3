@@ -1,0 +1,20 @@
+<!-- Al componente le vamos a decir que utilice el icono que importamos en el task-item-component -->
+<!-- Colocamos el event onDelete, para cuando hacemos click en el icon 'x' se borre la tarea -->
+<div
+    class="task"
+    [ngClass]="{ reminder: task.reminder }"
+    (click)="onToggle(task)"
+>
+    <h3>
+        {{ task.text }} 
+        <fa-icon 
+            [icon]="faTimes"
+            [ngStyle]="{'color':'red'}"
+            (click)="onDelete(task)"
+        >
+        </fa-icon>
+    </h3>
+    <p>
+        {{ task.day }}
+    </p>
+</div>

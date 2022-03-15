@@ -1,0 +1,29 @@
+*Cada task debe ser una tarjeta. Por eso creamos un component que sea el item de la tarjeta.
+
+*Desde la lista de tareas vamos a ir montando un component-item, que a la vez le vamos a ir pasando un objeto tarea.
+
+*La lista de tareas está en un archivo .json, se la pasamos al task-component, este hace una list y se la pasa al task-item-component.
+
+*Para importar fuentes desde Angular --> ng add @fortawesome/angular-fontawesome@ 
+    https://www.npmjs.com/package/@fortawesome/angular-fontawesome
+
+!! 
+    Tenemos una lista de tareas que las leemos desde el component-task, este hace un loop sobre la lista,
+        y va montando por cada tarea un componente que es el de item-task,
+        dentro de este vamos guardando y visualizando la información de cada elemento.
+
+
+Con 'ng generate service service/task':
+Creamos un servicio para poder manejar las tareas, ya no lo maneja el componente.
+
+*Json server--> nos sireve como emulador de DB.
+    'npm i json-server'
+ En el archivo package.json-->  en scripts: 
+    "server": "json-server --watch db.json --5000"
+    Vamos a iniciar el service, y el db.json va a ser el archivo donde estaremos guardando los datos de DB.
+ --5000 : va a seguir la ejecución desde el puerto 5000.
+
+*Para correr el servicio:
+'npm run server'
+
+*El service se encarga de hablar con  la DB, la lógica la manejamos en el component.

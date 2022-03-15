@@ -1,0 +1,28 @@
+Component:
+    * El trabajo de un componente es habilitar la experiencia del usuario y nada más.
+    * Debe presentar propiedades y métodos para el enlace de datos, a fin de mediar entre la vista (representada por la plantilla) y,
+         la lógica de la aplicación (que a menudo incluye alguna noción de modelo).
+    * Puede delegar ciertas tareas a los servicios, 
+            como obtener datos del servidor, 
+            validar la entrada del usuario o, 
+            iniciar sesión directamente en la consola. 
+         Al definir tales tareas de procesamiento en una clase de servicio inyectable, 
+         hace que esas tareas estén disponibles para cualquier componente. 
+    * También puede inyectar diferentes proveedores del mismo tipo de servicio, según corresponda las circunstancias.  
+
+Propery Binding:
+ Use el Propery Binding(enlace de propiedad) para hacer cosas como:
+    * alternar la funcionalidad del botón,
+    * establecer rutas mediante programación
+    * y compartir valores entre componentes.
+
+Service:
+    * Es una clase con el decorador @Injectable() (encapsula lógica y código que no son de interfaz de usuario que se pueden reutilizar en una aplicación).
+    * Angular distingue los componentes de los servicios, para aumentar la modularidad y la reutilización.
+    * Los metadatos @Injectable() permiten que la clase de servicio se use con el mecanismo de inyección de dependencia.
+    * La clase inyectable es instanciada por un proveedor. 
+    * Los inyectores mantienen listas de proveedores y las utilizan para proporcionar instancias de servicio
+      cuando los componentes u otros servicios las requieren.
+    * Para definir una clase como un servicio en Angular, use el decorador
+      para proporcionar los metadatos que permitan a Angular inyectarlo en un componente como una dependencia.
+    * Use  el decorador (@Inyectable) para indicar que un componente u otra clase (como otro servicio, una canalización o un NgModule) tiene una dependencia.  
